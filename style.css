@@ -58,7 +58,7 @@ a {
 }
 
 .img1 {
-    width: 4%;
+    width: 4.5%;
     display: block;
     position: absolute;
     top: 535px;
@@ -66,7 +66,7 @@ a {
 }
 
 .img2 {
-    width: 4.5%;
+    width: 5%;
     display: block;
     position: absolute;
     top: 535px;
@@ -130,7 +130,7 @@ a {
     margin: 0;
     top: 545px;
     width: 50%;
-    left: 20px;
+    left: 7px;
     text-align: center;
     text-justify: auto;
     color: white;
