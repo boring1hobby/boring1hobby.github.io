@@ -6,6 +6,10 @@ body {
     overflow-x: hidden
 }
 
+title{
+    font-size: smaller;
+}
+
 a {
     font-family: monospace;
     font-style: italic;
