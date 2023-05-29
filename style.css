@@ -1,10 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #333333f3;
-    transform-origin: 0 0;
-    transform: scale(1);
+    overflow-x: hidden
 }
 
 a {
@@ -36,37 +34,55 @@ a {
     color: white;
 }
 
+.animated-button {
+    display: inline-block;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+  }
+
+  .animated-button:hover .img1,
+.animated-button:hover .img2 {
+  transform: scale(1.2);
+}
+
 .img {
+    position: absolute;
+    display: block;
     width: 100%;
     height: 380px;
 }
 
 .img1 {
-    width: 50px;
-    position: fixed;
-    margin: 0;
-    top: 113%;
-    left: 65%;
+    width: 4.5%;
+    display: block;
+    position: absolute;
+    top: 513px;
+    right: 30%;
 }
 
 .img2 {
-    width: 55px;
-    position: fixed;
-    margin: 0;
-    top: 113%;
-    left: 80%;
+    width: 5%;
+    display: block;
+    position: absolute;
+    top: 515px;
+    right: 15%;
 }
 
 .spotify {
-    position: fixed;
+    position: absolute;
+    display: block;
     top: 50px;
     left: 1%;
+    width: 100%;
 }
 
 .table {
-    position: fixed;
+    position: absolute;
     margin: 0;
-    top: 93%;
+    top: 428px;
     left: 0px;
     width: 50%;
     background-color: #333;
@@ -77,9 +93,9 @@ a {
 }
 
 .table1 {
-    position: fixed;
+    position: absolute;
     margin: 0;
-    top: 93%;
+    top: 428px;
     left: 50%;
     width: 50%;
     background-color: #333;
@@ -90,58 +106,26 @@ a {
     font-style: italic;
 }
 
-.animated-button {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.animated-button1 {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.animated-button .img1,
-.animated-button1 .img2 {
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.animated-button:hover .img1 {
-    transform: scale(1.2);
-}
-
-.animated-button1:hover .img2 {
-    transform: scale(1.2);
-}
 
 .text {
-    position: fixed;
-    margin: 0;
-    top: 110%;
-    left: 0px;
+    position: absolute;
+    margin: 1;
+    top: 490px;
     width: 50%;
+    left: 6px;
     text-align: center;
     text-justify: auto;
     color: white;
     font-family: monospace;
-    font-size: 140%;
+    font-size: 150%;
     font-weight: normal;
     animation: opacityAnimation 8s infinite;
 }
 
 .text1 {
-    position: fixed;
+    position: absolute;
     margin: 0;
-    top: 120%;
-    left: 0px;
+    top: 560px;
     width: 50%;
     text-align: center;
     text-justify: auto;
@@ -154,8 +138,8 @@ a {
 
 .text2{
     position: absolute;
-    top: 150%;
-    right: 0%;
+    top: 100%;
+    right:0px;
     font-size: 12px;
     font-style: italic;
     color: white;
@@ -202,3 +186,4 @@ a {
         transform: translateX(0);
     }
 }
+
