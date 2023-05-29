@@ -1,3 +1,4 @@
+html,
 body {
     margin: 0;
     padding: 0;
@@ -12,11 +13,12 @@ a {
 
 .topnav {
     background-color: #333;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .topnav a {
-    float: right;
+    float: none;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -41,11 +43,11 @@ a {
     background-color: transparent;
     cursor: pointer;
     animation: pulse 2s infinite;
-  }
+}
 
-  .animated-button:hover .img1,
+.animated-button:hover .img1,
 .animated-button:hover .img2 {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .img {
@@ -56,7 +58,7 @@ a {
 }
 
 .img1 {
-    width: 4.5%;
+    width: 5.5%;
     display: block;
     position: absolute;
     top: 513px;
@@ -64,7 +66,7 @@ a {
 }
 
 .img2 {
-    width: 5%;
+    width: 6%;
     display: block;
     position: absolute;
     top: 515px;
@@ -74,9 +76,8 @@ a {
 .spotify {
     position: absolute;
     display: block;
-    top: 50px;
+    top: 8%;
     left: 1%;
-    width: 100%;
 }
 
 .table {
@@ -127,6 +128,7 @@ a {
     margin: 0;
     top: 560px;
     width: 50%;
+    left: 5px;
     text-align: center;
     text-justify: auto;
     color: white;
@@ -136,14 +138,6 @@ a {
     animation: opacityAnimation 8s infinite;
 }
 
-.text2{
-    position: absolute;
-    top: 100%;
-    right:0px;
-    font-size: 12px;
-    font-style: italic;
-    color: white;
-}
 
 .slide-in-left {
     animation-name: slideInLeft;
@@ -186,4 +180,3 @@ a {
         transform: translateX(0);
     }
 }
-
