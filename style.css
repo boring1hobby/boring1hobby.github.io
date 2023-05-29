@@ -60,6 +60,7 @@ a {
 .spotify {
     position: fixed;
     top: 50px;
+    left: 1%;
 }
 
 .table {
@@ -149,6 +150,15 @@ a {
     font-size: 110%;
     font-weight: normal;
     animation: opacityAnimation 8s infinite;
+}
+
+.text2{
+    position: absolute;
+    top: 150%;
+    right: 0%;
+    font-size: 12px;
+    font-style: italic;
+    color: white;
 }
 
 .slide-in-left {
