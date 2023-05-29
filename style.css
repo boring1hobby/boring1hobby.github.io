@@ -130,9 +130,36 @@ a {
     text-justify: auto;
     color: white;
     font-family: monospace;
-    font-size: 100%;
+    font-size: 140%;
     font-weight: normal;
     animation: opacityAnimation 8s infinite;
+}
+
+.text1 {
+    position: fixed;
+    margin: 0;
+    top: 78%;
+    left: 0px;
+    width: 50%;
+    text-align: center;
+    text-justify: auto;
+    color: white;
+    font-family: monospace;
+    font-size: 110%;
+    font-weight: normal;
+    animation: opacityAnimation 8s infinite;
+}
+
+.slide-in-left {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.slide-in-right {
+    animation-name: slideInRight;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 
 @keyframes opacityAnimation {
@@ -142,5 +169,25 @@ a {
 
     100% {
         opacity: 0.5;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
     }
 }
