@@ -46,7 +46,8 @@ a {
 }
 
 .animated-button:hover .img1,
-.animated-button:hover .img2 {
+.animated-button:hover .img2,
+.animated-button:hover .img3 {
     transform: scale(1.2);
 }
 
@@ -70,7 +71,15 @@ a {
     display: block;
     position: absolute;
     top: 535px;
-    right: 15%;
+    right: 18%;
+}
+
+.img3 {
+    width: 5.5%;
+    display: block;
+    position: absolute;
+    top: 525px;
+    right: 6%;
 }
 
 .spotify {
