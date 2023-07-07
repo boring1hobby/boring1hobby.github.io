@@ -82,14 +82,6 @@ a {
     right: 6%;
 }
 
-.spotify {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    display: block;
-    top: auto;
-    left: 0.5%;
-}
 
 .table {
     position: absolute;
@@ -137,7 +129,7 @@ a {
 .text1 {
     position: absolute;
     margin: 0;
-    top: 545px;
+    top: 525px;
     width: 50%;
     left: 7px;
     text-align: center;
