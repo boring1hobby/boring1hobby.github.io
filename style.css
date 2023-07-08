@@ -129,11 +129,10 @@ a {
 .text1 {
     position: absolute;
     margin: 0;
-    top: 549px;
+    top: 548px;
     width: 50%;
     left: 7px;
     text-align: center;
-    text-justify: auto;
     color: white;
     font-family: monospace;
     font-size: 110%;
