@@ -32,7 +32,7 @@ a {
 }
 
 .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #803909;
     color: white;
 }
 
@@ -59,7 +59,7 @@ a {
 }
 
 .img1 {
-    width: 4.5%;
+    width: 3.5%;
     display: block;
     position: absolute;
     top: 535px;
@@ -67,19 +67,11 @@ a {
 }
 
 .img2 {
-    width: 5%;
+    width: 4%;
     display: block;
     position: absolute;
-    top: 535px;
-    right: 18%;
-}
-
-.img3 {
-    width: 5.5%;
-    display: block;
-    position: absolute;
-    top: 533.1px;
-    right: 6%;
+    top: 538px;
+    right: 15%;
 }
 
 
