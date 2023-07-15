@@ -7,7 +7,7 @@
     <title>Welcome the Projec!</title>
     <link rel="icon" href="img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">´
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HBKVH7MSV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -16,7 +16,6 @@
 
         gtag('config', 'G-6HBKVH7MSV');
     </script>
-
 </head>
 
 <body>
@@ -69,6 +68,12 @@
             </tr>
         </table>
     </header>
+    <form id="form-opiniao" action="enviar_opiniao.php" method="POST">
+        <label class="text2" for="opiniao">Deixa a tua opinião:</label>
+        <textarea id="opiniao" name="opiniao" required maxlength="220"></textarea>
+        <button type="submit">Enviar</button>
+        <p id="mensagem"></p>
+    </form>
 </body>
 
 </html>

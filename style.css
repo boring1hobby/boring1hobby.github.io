@@ -132,6 +132,14 @@ a {
     animation: opacityAnimation 8s infinite;
 }
 
+.text2 {
+    color: white;
+    font-family: monospace;
+    font-size: 110%;
+    font-weight: normal;
+
+}
+
 .slide-in-left {
     animation-name: slideInLeft;
     animation-duration: 2s;
@@ -172,4 +180,29 @@ a {
     to {
         transform: translateX(0);
     }
+}
+
+
+
+#form-opiniao {
+    position: fixed;
+    bottom: 10%;
+    left: 75%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#opiniao {
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+}
+
+#form-opiniao button {
+    display: block;
+    margin: 0 auto;
 }
