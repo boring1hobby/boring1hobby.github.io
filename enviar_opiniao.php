@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["C:\\Users\\Íris\\Desktop\\TESTES HTML CSS\\css4\\enviar_opiniao.php"] == "POST") {
     $opiniao = $_POST["opiniao"];
     $para = "pciris22@outlook.com";
     $assunto = "Nova opinião";

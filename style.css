@@ -185,9 +185,9 @@ a {
 
 
 #form-opiniao {
-    position: fixed;
-    bottom: 10%;
-    left: 75%;
+    position: absolute;
+    bottom: -230px;
+    left: 50%;
     transform: translate(-50%, 50%);
     width: 400px;
     padding: 20px;
