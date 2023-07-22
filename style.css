@@ -59,19 +59,17 @@ a {
 }
 
 .img1 {
-    width: 3.5%;
-    display: block;
+    width: 6em;
     position: absolute;
-    top: 535px;
+    top: 600px;
     right: 30%;
 }
 
 .img2 {
-    width: 4%;
-    display: block;
+    width: 6em;
     position: absolute;
-    top: 538px;
-    right: 15%;
+    top: 605px;
+    right: 10%;
 }
 
 
@@ -81,6 +79,7 @@ a {
     top: 412px;
     left: 0px;
     width: 50%;
+    font-size: 1.2em;
     background-color: #333;
     text-align: center;
     color: white;
@@ -94,6 +93,7 @@ a {
     top: 412px;
     left: 50%;
     width: 50%;
+    font-size: 1.2em;
     background-color: #333;
     text-align: center;
     color: white;
@@ -105,15 +105,13 @@ a {
 
 .text {
     position: absolute;
-    margin: 1;
     top: 448px;
     width: 50%;
-    left: 3.5px;
+    left: 15px;
     text-align: center;
-    text-justify: auto;
     color: white;
     font-family: monospace;
-    font-size: 150%;
+    font-size: 2.3em;
     font-weight: normal;
     animation: opacityAnimation 8s infinite;
 }
@@ -121,13 +119,13 @@ a {
 .text1 {
     position: absolute;
     margin: 0;
-    top: 550px;
+    top: 590px;
     width: 50%;
-    left: 7px;
-    text-align: center;
+    left: 20px;
+    text-align: justify;
     color: white;
     font-family: monospace;
-    font-size: 110%;
+    font-size: 1.5em;
     font-weight: normal;
     animation: opacityAnimation 8s infinite;
 }
