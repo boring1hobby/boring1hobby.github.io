@@ -6,9 +6,8 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Configuração do SMTP para enviar emails
-ini_set("IMAP", "	
-imap.gmail.com");
-ini_set("imap_port", "993");
+ini_set("SMTP", "smtp.gmail.com");
+ini_set("smtp_port", "465");
 ini_set("auth_username", "irisopi223@gmail.com");
 ini_set("auth_password", "pd223caldas");
 ini_set("error_logfile", "error.log");
