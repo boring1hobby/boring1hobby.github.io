@@ -1,9 +1,9 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
+    margin: auto !important;
+    padding: auto !important;
     background-color: #333333f3;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 a {
@@ -21,9 +21,9 @@ a {
     float: none;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .topnav a:hover {
@@ -194,6 +194,7 @@ a {
 }
 
 #opiniao {
+    display: block;
     height: 50px;
     width: 100%;
     color: white;
