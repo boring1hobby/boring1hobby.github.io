@@ -119,7 +119,7 @@ a {
 .text1 {
     position: absolute;
     margin: 0;
-    top: 590px;
+    top: 630px;
     width: 50%;
     left: 20px;
     text-align: justify;
@@ -187,7 +187,7 @@ a {
     bottom: -150px;
     left: 50%;
     transform: translate(-50%, 50%);
-    width: 400px;
+    width: 300px;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
