@@ -1,51 +1,38 @@
 <?php
-// Mostra os errors no ecra em vez do terminal
-ini_set('display_errors', 1);
+// Inclua o arquivo PHPMailerAutoload.php do PHPMailer
+require 'C:\Users\Íris\Desktop\TESTES HTML CSS\css4\PHPMailer\src\PHPMailer.php';
+require 'C:\Users\Íris\Desktop\TESTES HTML CSS\css4\para\PHPMailer\src\SMTP.php';
+require 'C:\Users\Íris\Desktop\TESTES HTML CSS\css4\para\PHPMailer\src\Exception.php';
 
-// Reporta os errors todos
-error_reporting(E_ALL);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-// Configuração do SMTP para enviar emails
-ini_set("SMTP", "smtp.gmail.com");
-ini_set("smtp_port", "465");
-ini_set("auth_username", "irisopi223@gmail.com");
-ini_set("auth_password", "pd223caldas");
-ini_set("error_logfile", "error.log");
-ini_set("debug_logfile", "debug.log");
-ini_set("force_sender", "XXXXXXXXX@gmail.com");
+// Crie uma instância do PHPMailer
+$mail = new PHPMailer();
 
+// Configuração do servidor SMTP (Exemplo para o Gmail)
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com'; // Servidor SMTP do Gmail
+$mail->SMTPAuth = true;
+$mail->Username = 'irisopi223@gmail.com'; // Seu e-mail Gmail
+$mail->Password = 'pd223caldas'; // Sua senha do Gmail
+$mail->SMTPSecure = 'ssl'; // Use 'tls' se estiver usando TLS
+$mail->Port = 465; // Porta para SSL é 465, para TLS é 587
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty($_POST["opiniao"])) {
-        echo "opiniao sem nada";
-    } else {
-        // variáveis
-        $FROMEMAIL = '"NOME" <XXXXXXXXXXXX@gmail.com>';
-        $TOEMAIL = "XXXXXXXXXXXXXX@gmail.com";
-        $SUBJECT = "Nova opinião";
-        $PLAINTEXT = "Uma nova opinião foi recebida:\n\n" . $_POST["opiniao"];
-        $RANDOMHASH = "anyrandomhash";
-        $FICTIONALSERVER = "@email.example.com";
-        $ORGANIZATION = "example.com";
+// Configuração do remetente e destinatário
+$mail->setFrom('seu_email@gmail.com', 'Seu Nome'); // Endereço de e-mail do remetente e nome
+$mail->addAddress('destinatario@example.com', 'Nome Destinatário'); // Endereço de e-mail do destinatário e nome (opcional)
 
-        $headers = "From: " . $FROMEMAIL . "\n";
-        $headers .= "Reply-To: " . $FROMEMAIL . "\n";
-        $headers .= "Return-path: " . $FROMEMAIL . "\n";
-        $headers .= "Message-ID: <" . $RANDOMHASH . $FICTIONALSERVER . ">\n";
-        $headers .= "X-Mailer: Your Website\n";
-        $headers .= "Organization: $ORGANIZATION\n";
-        $headers .= "MIME-Version: 1.0\n";
+// Conteúdo do e-mail
+$mail->isHTML(false); // Defina como true se o conteúdo for HTML
+$mail->Subject = 'Assunto do e-mail';
+$mail->Body = 'Corpo do e-mail';
 
-        // Add content type (plain text encoded in quoted printable, in this example)
-        $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
-
-        // Convert plain text body to quoted printable
-        $message = quoted_printable_encode($PLAINTEXT);
-
-        // Create a BASE64 encoded subject
-        $subject = "=?UTF-8?B?" . base64_encode($SUBJECT) . "?=";
-
-        echo $TOEMAIL . " . " . $subject . " . " . $message;
-    }
+// Enviar o e-mail
+if ($mail->send()) {
+    echo 'E-mail enviado com sucesso!';
+} else {
+    echo 'Erro ao enviar o e-mail: ' . $mail->ErrorInfo;
 }
 ?>
