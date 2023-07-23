@@ -1,8 +1,8 @@
 <?php
 // Inclua o arquivo PHPMailerAutoload.php do PHPMailer
 require 'C:\Users\Íris\Desktop\TESTES HTML CSS\css4\PHPMailer\src\PHPMailer.php';
-require 'C:\Users\Íris\Desktop\TESTES HTML CSS\css4\para\PHPMailer\src\SMTP.php';
-require 'C:\Users\Íris\Desktop\TESTES HTML CSS\css4\para\PHPMailer\src\Exception.php';
+require 'C:\Users\Íris\Desktop\TESTES HTML CSS\css4\PHPMailer\src\SMTP.php';
+require 'C:\Users\Íris\Desktop\TESTES HTML CSS\css4\PHPMailer\src\Exception.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
