@@ -15,8 +15,8 @@ $mail = new PHPMailer();
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com'; // Servidor SMTP do Gmail
 $mail->SMTPAuth = true;
-$mail->Username = 'irisopi223@gmail.com'; // Seu e-mail Gmail
-$mail->Password = 'pd223caldas'; // Sua senha do Gmail
+$mail->Username = '******************@gmail.com'; // Seu e-mail Gmail
+$mail->Password = '*********'; // Sua senha do Gmail
 $mail->SMTPSecure = 'ssl'; // Use 'tls' se estiver usando TLS
 $mail->Port = 465; // Porta para SSL é 465, para TLS é 587
 
