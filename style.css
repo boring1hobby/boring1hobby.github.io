@@ -46,8 +46,7 @@ a {
 }
 
 .animated-button:hover .img1,
-.animated-button:hover .img2,
-.animated-button:hover .img3 {
+.animated-button:hover .img2 {
     transform: scale(1.2);
 }
 
@@ -183,12 +182,11 @@ a {
 
 .form {
     position: absolute;
-    background-color:#803909;
+    background-color: #803909;
     color: white;
     bottom: -130px;
     left: 47%;
-    width: 120px ;
+    width: 120px;
     box-sizing: border-box;
     text-align: center;
 }
-
