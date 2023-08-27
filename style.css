@@ -5,7 +5,7 @@ body {
 }
 
 .menu {
-    font-size: 1.4em;
+    font-size: 1em;
     font-family: monospace;
     font-style: italic;
     text-decoration: dotted;
@@ -36,7 +36,7 @@ body {
     color: #ffffff;
     font-family: monospace;
     font-style: italic;
-    font-size: 1.8em;
+    font-size: 1.5em;
     display: block;
     animation-name: slideInLeft;
     animation-duration: 2s;
@@ -48,7 +48,7 @@ body {
     color: #ffffff;
     font-family: monospace;
     font-style: italic;
-    font-size: 1.8em;
+    font-size: 1.5em;
     animation-name: slideInRight;
     animation-duration: 2s;
     animation-fill-mode: both;
@@ -76,7 +76,7 @@ body {
 }
 
 .themed-grid-col img {
-    max-width: 35%;
+    max-width: 30%;
     height: auto;
     animation: pulse 2s infinite;
 }
