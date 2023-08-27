@@ -37,11 +37,11 @@ body {
     color: #ffffff;
     font-family: monospace;
     font-style: italic;
-    font-size: 2em;
+    font-size: 1.8em;
+    display: block;
     animation-name: slideInLeft;
     animation-duration: 2s;
     animation-fill-mode: both;
-
 }
 
 .text1 {
@@ -49,7 +49,7 @@ body {
     color: #ffffff;
     font-family: monospace;
     font-style: italic;
-    font-size: 2em;
+    font-size: 1.8em;
     animation-name: slideInRight;
     animation-duration: 2s;
     animation-fill-mode: both;
