@@ -1,7 +1,6 @@
 body {
     background-color: #333333f3;
-    display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .menu {
@@ -88,6 +87,10 @@ body {
 
 .footer {
     color: #ffffff !important;
+}
+
+.position{
+    margin-top: 40px;
 }
 
 @keyframes opacityAnimation {
