@@ -43,8 +43,9 @@
                 <p class="centered-text">Hello there!<br>Welcome the boring1hobby</p>
             </div>
             <p>
-                I'm Íris Coutinho, I'm 23 years old and since I am in love with computers and games, I started to
-                invest more in this taste of mine and the opportunity to get a computer course.In order to improve
+                I'm Íris Coutinho, I'm <span id="idade"></span> years old and since I am in love with computers and
+                games, I started to
+                invest more in this taste of mine and the opportunity to get a computer course. In order to improve
                 and put my knowledge into practice, <br>I created this project.
             </p>
         </div>
@@ -55,7 +56,6 @@
                         alt="Instagram"></a>
             </div>
         </div>
-
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3 mx-auto text-center">
                 <div class="col">
@@ -79,11 +79,10 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
                         style="background-image: url('img/unsplash3.jpg');">
-                        <div class="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
+                        <div class="d-flex flex-column h-100 p-3 pb-3 text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">You will always be for you never expect
                                 anything from anyone you are your greatest anchor.</h3>
                             <ul class="d-flex list-unstyled mt-auto"></ul>
@@ -99,6 +98,19 @@
                 <span class="mb-3 mb-md-0 text-body-secondary footer">© 2023 Boring1Hobby, Inc</span>
             </div>
         </footer>
+        <script>
+            function calcularIdade(dataNascimento) {
+                const hoje = new Date();
+                const dataNasc = new Date(dataNascimento);
+                const diff = hoje - dataNasc;
+                const idade = Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
+                return idade;
+            }
+            const idadeElement = document.getElementById('idade');
+            const dataNascimento = '2000-02-07';
+            const idade = calcularIdade(dataNascimento);
+            idadeElement.textContent = idade;
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
             crossorigin="anonymous"></script>
