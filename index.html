@@ -43,7 +43,7 @@
                 <p class="centered-text">Hello there!<br>Welcome the boring1hobby</p>
             </div>
             <p>
-                I'm Íris Coutinho, I'm <span id="idade"></span> years old and since I am in love with computers and
+                I'm Íris Coutinho, I'm <span id="age"></span> years old and since I am in love with computers and
                 games, I started to
                 invest more in this taste of mine and the opportunity to get a computer course. In order to improve
                 and put my knowledge into practice, <br>I created this project.
@@ -106,7 +106,7 @@
                 const idade = Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
                 return idade;
             }
-            const idadeElement = document.getElementById('idade');
+            const idadeElement = document.getElementById('age');
             const dataNascimento = '2000-02-07';
             const idade = calcularIdade(dataNascimento);
             idadeElement.textContent = idade;
