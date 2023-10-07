@@ -22,10 +22,15 @@ $sql = "INSERT INTO mensagens (nome, email, mensagem) VALUES ('$nome', '$email',
 
 if ($conn->query($sql) === TRUE) {
     echo "Mensagem enviada com sucesso!";
+
+    // Redirecionar com base no idioma atual
+    if ($_SERVER['REQUEST_URI'] === '/index-en.html') {
+        echo "<script>redirectToLanguagePage('en');</script>";
+    } elseif ($_SERVER['REQUEST_URI'] === '/index-pt.html') {
+        echo "<script>redirectToLanguagePage('pt');</script>";
+    }
+
+    exit; // Certifique-se de sair após o redirecionamento
 } else {
     echo "Erro ao enviar a mensagem: " . $conn->error;
 }
-
-// Fechar a conexão com o banco de dados
-$conn->close();
-?>
