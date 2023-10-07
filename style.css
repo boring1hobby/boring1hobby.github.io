@@ -1,124 +1,195 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-    background-color: #333333f3;
-    margin: 0 auto;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
 }
 
-.menu {
+/* Navbar */
+.navbar a {
     font-size: 1.3em;
-    font-family: monospace;
-    font-style: italic;
-    text-decoration: dotted;
+    text-decoration: none;
+    padding: 10px 20px;
 }
 
-.menu a {
-    color: #f2f2f2;
-    font-size: 1em;
+/* Aplica a animação apenas aos links na navbar, exceto o link da marca (navbar-brand) */
+.navbar a:not(.navbar-brand) {
+    color: #000000 !important;
+    animation: slideInLeft 2s both;
 }
 
-.menu a:hover {
-    background-color: #ddd;
-    color: black;
+/* Mantém a cor de fundo cinza quando o cursor está sobre os links na navbar, exceto o link da marca (navbar-brand) */
+.navbar a:not(.navbar-brand):hover {
+    background-color: #555555;
 }
 
-.menu a.active {
-    background-color: #803909 !important;
-    color: white;
+/* Mantém o link da marca (navbar-brand) sem animação */
+.navbar-brand {
+    animation: none !important;
+    color: #000000 !important;
+}
+
+/* Mantém o link da marca (navbar-brand) com a cor de fundo transparente */
+.navbar-brand:hover {
+    background-color: transparent;
+}
+
+
+.header {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
 .img {
-    width: 100%;
-    height: 40em;
+	width: 100%;
+	height: 40em;
+}
+
+.profile-image {
+	width: 400px;
+	height: 550px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 5px solid #000000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	animation-name: slideInLeft;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+}
+
+.profile-image-container {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.profile-image-container:hover {
+	transform: scale(1.05);
+	transition: transform 0.1s ease-in-out;
 }
 
 .text {
-    background-color: #333333bf;
-    color: #ffffff;
-    font-family: monospace;
-    font-style: italic;
-    font-size: 2em;
-    display: block;
-    animation-name: slideInLeft;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+	margin: 20px;
+	padding: 20px;
+	background-color: #ab4444ad;
+	border-radius: 10px;
+	animation-name: slideInRight;
+	animation-duration: 2s;
+	animation-fill-mode: both;
 }
 
-.text1 {
-    background-color: #333333bf;
-    color: #ffffff;
-    font-family: monospace;
-    font-style: italic;
-    font-size: 2em;
-    animation-name: slideInRight;
-    animation-duration: 2s;
-    animation-fill-mode: both;
 
+footer {
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+	padding: 10px;
 }
 
-.text2 {
-    color: #ffffffb9;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-size: 1.2em;
-    animation: opacityAnimation 8s infinite;
-    text-align: center;
+.content-above-footer {
+	margin-top: 20px;
 }
 
-.col-centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 44em;
+.social-icon {
+	color: #000;
 }
 
 
 
-.themed-grid-col img {
-    max-width: 30%;
-    height: auto;
-    animation: pulse 2s infinite;
+.custom-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
-
-.themed-grid-col img:hover {
-    transform: scale(1.2);
+.custom-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
-.footer {
-    color: #ffffff !important;
+.contact-form {
+	max-width: 500px;
+	width: 100%;
+	padding: 20px;
+	border: 1px solid #ab4444ad;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #ab4444ad;
 }
 
-.position {
-    margin-top: 40px;
+.contact-form h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.contact-form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.contact-form textarea {
+	resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+	background-color: #ab4444ad;
+	color: #000000;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+	background-color: #0056b3;
 }
 
 
 @keyframes opacityAnimation {
-    10% {
-        opacity: 1;
-    }
+	10% {
+		opacity: 1;
+	}
 
-    100% {
-        opacity: 0.5;
-    }
+	100% {
+		opacity: 0.5;
+	}
 }
 
 @keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-    }
+	from {
+		transform: translateX(-100%);
+	}
 
-    to {
-        transform: translateX(0);
-    }
+	to {
+		transform: translateX(0);
+	}
 }
 
 @keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-    }
+	from {
+		transform: translateX(100%);
+	}
 
-    to {
-        transform: translateX(0);
-    }
+	to {
+		transform: translateX(0);
+	}
 }
