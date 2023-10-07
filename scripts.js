@@ -29,4 +29,17 @@ const dataNascimento = "2000-02-07";
 const idade = calcularIdade(dataNascimento);
 document.getElementById("idade").textContent = idade;
 
+function atualizarDataHora() {
+    const dataHoraElement = document.getElementById("data-hora");
+    const dataHoraAtual = new Date();
+
+    const dataFormatada = dataHoraAtual.toLocaleDateString();
+    const horaFormatada = dataHoraAtual.toLocaleTimeString();
+
+    dataHoraElement.innerHTML = `${dataFormatada} - ${horaFormatada}`;
+}
+
+// Atualiza a data e a hora a cada segundo (1000 milissegundos)
+setInterval(atualizarDataHora, 1000);
+
 
