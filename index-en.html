@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Welcome to Website!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -29,7 +29,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about">About</a>
@@ -56,7 +56,7 @@
                     <img src="img/profile.jpg" alt="Your Photo" class="profile-image mx-auto d-block">
                 </div>
             </div>
-            <div class="col-md-6 text-center" style="margin-left: 90px;">
+            <div class="col-md-6 text-center" style="margin-left: 0px;">
                 <div class="themed-grid-col text">
                     <h2 class="mb-4">Hello! I'm Iris Coutinho</h2>
                     <h3 class="mb-3">Self-Knowledge Developer</h3>
@@ -108,30 +108,13 @@
         </div>
     </div>
 
-    <div id="contact" class="container custom-center">
-        <div class="contact-form">
-            <h1>Contact Form</h1>
-            <form method="POST" action="processar.php">
-                <label for="nome">Name:</label>
-                <input type="text" name="name" id="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-
-                <label for="message">Message:</label>
-                <textarea name="mensagem" id="mensagem" required></textarea>
-                <div class="text-center">
-                    <input type="submit" value="Send" class="btn btn-primary">
-                </div>
-            </form>
-        </div>
-    </div>
+    <iframe id="contact" src="https://forms.monday.com/forms/embed/66210b3d010a3da70fb2c8b1b7b06335?r=euc1" width="1500" height="730" style="border: 0; box-shadow: 5px 5px 56px 0px;"></iframe>
 
     <div class="content-above-footer">
         <footer class="py-2 my-0 border-top">
             <div class="container text-center">
                 <span class="mb-md-0 text-body-secondary footer">
-                    © 2023 Boring1Hobby, Inc | Redes Sociais:
+                    © 2023 Boring1Hobby, Inc | Social Media:
                     <a href="https://twitter.com/boring1hobby" class="social-icon" data-icon="fab fa-twitter"
                         target="_blank"></a>
                     <a href="https://www.instagram.com/boring1hobby" class="social-icon" data-icon="fab fa-instagram"
@@ -141,15 +124,7 @@
     </div>
     </footer>
     </div>
-    <script>
-        function redirectToLanguagePage(language) {
-            if (language === 'en') {
-                window.location.href = 'index-en.html';
-            } else if (language === 'pt') {
-                window.location.href = 'index-pt.html';
-            }
-        }
-    </script>
+
     <script src="scripts.js"></script>
 </body>
 

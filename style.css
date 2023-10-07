@@ -1,37 +1,47 @@
 html {
+	display: block;
 	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	margin: 0 auto;
+	display: block;
+	margin: 0;
 	font-family: 'Roboto', sans-serif;
 }
 
-/* Navbar */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    z-index: 1000; 
+   
+}
+
 .navbar a {
     font-size: 1.3em;
     text-decoration: none;
     padding: 10px 20px;
 }
 
-/* Aplica a animação apenas aos links na navbar, exceto o link da marca (navbar-brand) */
+
 .navbar a:not(.navbar-brand) {
     color: #000000 !important;
     animation: slideInLeft 2s both;
 }
 
-/* Mantém a cor de fundo cinza quando o cursor está sobre os links na navbar, exceto o link da marca (navbar-brand) */
 .navbar a:not(.navbar-brand):hover {
     background-color: #555555;
 }
 
-/* Mantém o link da marca (navbar-brand) sem animação */
 .navbar-brand {
     animation: none !important;
     color: #000000 !important;
 }
 
-/* Mantém o link da marca (navbar-brand) com a cor de fundo transparente */
 .navbar-brand:hover {
     background-color: transparent;
 }
@@ -43,15 +53,16 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-}
+  }
 
 .img {
 	width: 100%;
-	height: 40em;
+	height: 42em;
 }
 
 .profile-image {
-	width: 400px;
+
+	width: 450px;
 	height: 550px;
 	overflow: hidden;
 	border-radius: 50%;
@@ -64,15 +75,11 @@ body {
 
 .profile-image-container {
 	max-width: 100%;
-	height: auto;
+	height: 50%;
 	display: block;
 	margin: 0 auto;
 }
 
-.profile-image-container:hover {
-	transform: scale(1.05);
-	transition: transform 0.1s ease-in-out;
-}
 
 .text {
 	margin: 20px;
@@ -100,70 +107,76 @@ footer {
 	color: #000;
 }
 
-
-
 .custom-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
 }
 
-.custom-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
+#sobre {
+	margin-top: 110px;
+	min-height: calc(100vh - 200px);
+	  
+  }
 
-.contact-form {
-	max-width: 500px;
-	width: 100%;
-	padding: 20px;
-	border: 1px solid #ab4444ad;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	background-color: #ab4444ad;
-}
+  .row.row-cols-1.row-cols-lg-3.g-4 {
+	margin-top: 100px;
+  }
+  
+  
 
-.contact-form h1 {
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.contact-form label {
-	display: block;
-	margin-bottom: 10px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 15px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-}
-
-.contact-form textarea {
-	resize: vertical;
-}
-
-.contact-form input[type="submit"] {
-	background-color: #ab4444ad;
-	color: #000000;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.contact-form input[type="submit"]:hover {
-	background-color: #0056b3;
-}
-
-
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+	/* Center all content on mobile devices */
+	body {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.navbar {
+	  /* Styles for the mobile navbar */
+	  background-color: #555;
+	}
+  
+	.navbar a {
+	  /* Styles for the mobile navbar links */
+	  font-size: 1.2em;
+	  padding: 8px 16px;
+	}
+  
+	.header {
+	  /* Styles for the mobile header */
+	  text-align: center;
+	}
+  
+	.img {
+	  /* Styles for the mobile header image */
+	  max-width: 100%;
+	  height: auto;
+	}
+  
+	.profile-image {
+	  /* Styles for the mobile profile image */
+	  width: 200px;
+	  margin-top: -100px;
+	  height: 500px;
+	}
+  
+	.profile-image-container {
+	  /* Styles for the mobile profile image container */
+	  margin-top: -20px;
+	}
+  
+	.text {
+	  /* Styles for the mobile text section */
+	  margin: 10px;
+	  padding: 10px;
+	  background-color: #ab4444ad;
+	}
+  
+	/* Additional mobile-specific styles can be added here */
+  }
 @keyframes opacityAnimation {
 	10% {
 		opacity: 1;
