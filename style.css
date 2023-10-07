@@ -62,7 +62,7 @@ body {
 
 .profile-image {
 
-	width: 450px;
+	width: 440px;
 	height: 550px;
 	overflow: hidden;
 	border-radius: 50%;
@@ -97,10 +97,11 @@ footer {
 	color: #000000;
 	text-align: center;
 	padding: 10px;
+	marg
 }
 
 .content-above-footer {
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 .social-icon {
