@@ -28,6 +28,15 @@ body::before {
 	z-index: -1;
 }
 
+.larger-font {
+    font-size: 18px; /* Tamanho da fonte desejado */
+    font-weight: bold; /* Negrito */
+}
+
+.navbar-brand img {
+    max-width: 100px; /* Ajuste o valor conforme necessário */
+    height: auto;
+}
 
 .container {
 	padding: 0;
@@ -44,33 +53,6 @@ body::before {
 	z-index: 1000;
 
 }
-
-
-.navbar a {
-	font-size: 1.3em;
-	text-decoration: none;
-	padding: 10px 20px;
-}
-
-
-.navbar a:not(.navbar-brand) {
-	color: #000000 !important;
-	animation: slideInLeft 2s both;
-}
-
-.navbar a:not(.navbar-brand):hover {
-	background-color: #555555;
-}
-
-.navbar-brand {
-	animation: none !important;
-	color: #000000 !important;
-}
-
-.navbar-brand:hover {
-	background-color: transparent;
-}
-
 
 .header {
 	justify-content: center;
@@ -123,7 +105,7 @@ p {
 footer {
 	color: #000000;
 	text-align: center;
-	padding: 0;
+	padding: 10px;
 }
 
 .content-above-footer {
@@ -132,6 +114,7 @@ footer {
 
 .social-icon {
 	color: #000;
+	font-size: 20px;
 }
 
 .custom-center {
@@ -141,7 +124,7 @@ footer {
 }
 
 #sobre {
-	margin-top: 26vh;
+	margin-top: 25vh;
 	min-height: calc(100vh - 200px);
 
 }
@@ -152,57 +135,28 @@ footer {
 
 
 
-/* Media Query for Mobile Devices */
 @media (max-width: 767px) {
+    /* Itens do menu quando o menu de hambúrguer está aberto */
+    .navbar-toggler[aria-expanded="true"] + .navbar-collapse .mobile-menu {
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 9999; /* Coloca o menu sobre a imagem de fundo */
+    }
 
-	/* Center all content on mobile devices */
-	body {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+    /* Estilo para os itens do menu no modo de sobreposição */
+    .navbar-toggler[aria-expanded="true"] + .navbar-collapse .mobile-menu li.nav-item {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+    }
 
-	.navbar {
-		/* Styles for the mobile navbar */
-		background-color: #555;
-	}
-
-	.navbar a {
-		/* Styles for the mobile navbar links */
-		font-size: 1.2em;
-		padding: 8px 16px;
-	}
-
-	.header {
-		/* Styles for the mobile header */
-		text-align: center;
-	}
-
-	.img {
-		/* Styles for the mobile header image */
-		max-width: 100%;
-		height: auto;
-	}
-
-	.profile-image {
-		/* Styles for the mobile profile image */
-		width: 200px;
-		margin-top: -150px;
-		height: 270px;
-	}
-
-	.profile-image-container {
-		/* Styles for the mobile profile image container */
-		margin-top: -20px;
-	}
-
-	.text {
-		margin: 10px;
-		padding: 10px;
-		background-color: #ab4444ad;
-	}
-
-
+    /* Estilo para os itens do menu no modo de sobreposição */
+    .navbar-toggler[aria-expanded="true"] + .navbar-collapse .mobile-menu li.nav-item a.nav-link {
+        color: #fff; /* Cor do texto do item do menu */
+        font-weight: bold; /* Texto em negrito */
+    }
 }
 
 @keyframes opacityAnimation {
