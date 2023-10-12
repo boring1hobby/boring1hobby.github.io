@@ -29,19 +29,21 @@ body::before {
 }
 
 .larger-font {
-    font-size: 18px; /* Tamanho da fonte desejado */
-    font-weight: bold; /* Negrito */
+	font-size: 18px;
+	/* Tamanho da fonte desejado */
+	font-weight: bold;
+	/* Negrito */
 }
 
 .navbar-brand img {
-    max-width: 100px; /* Ajuste o valor conforme necessário */
-    height: auto;
+	max-width: 100px;
+	/* Ajuste o valor conforme necessário */
+	height: auto;
 }
 
 .container {
 	padding: 0;
 }
-
 
 
 .fixed-header {
@@ -124,7 +126,7 @@ footer {
 }
 
 #sobre {
-	margin-top: 25vh;
+	margin-top: 0.5vh;
 	min-height: calc(100vh - 200px);
 
 }
@@ -133,31 +135,38 @@ footer {
 	margin-top: 100px;
 }
 
+.uk-flag {
+	width: 25px;
+	/* Ajuste o tamanho conforme necessário */
+	height: 25px;
+	/* Ajuste o tamanho conforme necessário */
+	margin-top: -6px;
+}
 
+.pt-flag {
+	width: 25px;
+	/* Ajuste o tamanho conforme necessário */
+	height: 25px;
+	/* Ajuste o tamanho conforme necessário */
+	margin-top: -5px;
+}
 
 @media (max-width: 767px) {
-    /* Itens do menu quando o menu de hambúrguer está aberto */
-    .navbar-toggler[aria-expanded="true"] + .navbar-collapse .mobile-menu {
-        background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index: 9999; /* Coloca o menu sobre a imagem de fundo */
-    }
 
-    /* Estilo para os itens do menu no modo de sobreposição */
-    .navbar-toggler[aria-expanded="true"] + .navbar-collapse .mobile-menu li.nav-item {
-        margin: 10px 0; /* Espaçamento entre os itens do menu */
-    }
+	.navbar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+	}
 
-    /* Estilo para os itens do menu no modo de sobreposição */
-    .navbar-toggler[aria-expanded="true"] + .navbar-collapse .mobile-menu li.nav-item a.nav-link {
-        color: #fff; /* Cor do texto do item do menu */
-        font-weight: bold; /* Texto em negrito */
-    }
+	#sobre {
+		margin-top: -16vh;
+		min-height: calc(100vh - 200px);
+	}
+
 }
+
 
 @keyframes opacityAnimation {
 	10% {
